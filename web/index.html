@@ -1,14 +1,105 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/style.min.css">
     </head>
     <body>
-        <section class="content content--centered">
-            <h1 class="content__header">NFQ Akademija</h1>
-            <p class="content__description">Pradžių pradžia.</p>
+        <div class="container">
+            <header>
+                <nav class="navbar navbar-toggleable-md navbar-light bg-faded container--rounded">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">CV</a>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:skirmantas.januskas@gmail.com">Hire me!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="content row justify-content-center">
+                <article>
+                    <h1 class="content--centered">Programming for food!</h1>
+                    <p>
+                        Fusce ante massa, sodales et eros a, consequat semper ligula. Nam mollis congue augue nec vestibulum. Phasellus dapibus, libero eleifend mattis molestie, ante erat dapibus urna, consequat vehicula velit ante a quam. Phasellus vitae posuere tellus. Morbi porta ligula a tellus hendrerit volutpat. Nullam sit amet hendrerit urna, facilisis luctus augue. In non semper ligula, quis vestibulum nibh.
+                    </p>
+                    <p>
+                        Maecenas molestie, ante eget varius mattis, lectus justo commodo risus, sit amet rhoncus sapien est vitae orci. Donec dapibus nec tellus eu elementum. Sed laoreet accumsan magna sit amet tincidunt. Sed et lacus fermentum, viverra lorem quis, tristique erat. Nam aliquam nisi justo. Duis odio purus, suscipit sed odio eu, facilisis molestie ex. Nunc venenatis, erat ut venenatis feugiat, lacus velit blandit leo, quis tincidunt justo velit sed orci. Etiam vestibulum ullamcorper leo, bibendum efficitur arcu dapibus feugiat. Etiam eget cursus mauris, ac congue nisi. Praesent fringilla vitae justo id ornare. Praesent finibus arcu fringilla gravida mollis. Fusce sed consequat libero.
+                    </p>
+                    <p>
+                        Etiam euismod sodales accumsan. Quisque porta auctor turpis. Curabitur vel neque quis mi cursus aliquet nec ac enim. Cras egestas ultricies velit at fermentum. Nunc vestibulum lobortis lacus, interdum bibendum metus consequat eu. Morbi vulputate, lectus et gravida tempus, mauris erat euismod arcu, accumsan rhoncus diam mauris ac velit. In ultrices dui quis ipsum malesuada feugiat. Ut ultricies feugiat ligula vel gravida. Cras nunc enim, semper vel tincidunt et, facilisis et sapien. Maecenas eget lectus dui.
+                    </p>
+                </article>
+
+                <aside>
+                    <h2 class="content--centered">Skirmantas Januškas</h2>
+                    <address>
+                        Contact me at <a href="https://www.facebook.com/skirmantas.januskas" target="_blank">Facebook</a><br />
+                        <br />
+                        Random street<br />
+                        Random city<br />
+                        Random country<br />
+                    </address>
+
+                        <button type="button" id="showSkills" class="btn btn-success btn-lg">
+                            Show skills
+                        </button>
+
+                        <div class="modal fade" id="skills" tabindex="-1" role="dialog" aria-labelledby="skillsLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="skillsLabel">My skills</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="skills">
+                                            <div class="skills__language">
+                                                <span class="skills__language--green">HTML:</span><br />
+                                                <progress max="100" value="10"></progress><br />
+                                            </div>
+
+                                            <div class="skills__language">
+                                                <span class="skills__language--orange">CSS:</span><br />
+                                                <progress max="100" value="30"></progress><br />
+                                            </div>
+
+                                            <div class="skills__language">
+                                                <span class="skills__language--blue">PHP:</span><br />
+                                                <progress max="100" value="50"></progress><br />
+                                            </div>
+
+                                            <div class="skills__language">
+                                                <span class="skills__language--red">JS:</span><br />
+                                                <progress max="100" value="70"></progress><br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </aside>
+            </div>
+
+            <footer class="container--rounded">
+                &copy; 2017 Skirmantas Januškas
+            </footer>
         </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/main-min.js"></script>
     </body>
 </html>
