@@ -1,0 +1,77 @@
+@import "bootstrap/mixins";
+@import "bootstrap/variables";
+
+$gray: #f7f7f7;
+
+body {
+  font-family: Helvetica;
+}
+.container {
+  padding: 1rem;
+  border-radius: 5px;
+
+  &--rounded {
+    border-radius: 5px;
+  }
+}
+
+.content {
+
+  &--centered {
+    text-align: center;
+  }
+
+  &__description {
+    color: #999;
+  }
+
+  article {
+    padding: 15px;
+    border-right: 2px dashed $gray;
+
+    @include make-sm-column(12);
+    @include make-md-column(8);
+    @include make-lg-column(8);
+  }
+
+  aside {
+    padding: 15px;
+    @include make-sm-column(12);
+    @include make-md-column(4);
+    @include make-lg-column(4);
+  }
+
+}
+
+.skills {
+
+  &__language {
+    margin-bottom: 1rem;
+
+    &--green {
+      color: limegreen;
+    }
+
+    &--blue {
+      color: deepskyblue;
+    }
+
+    &--orange {
+      color: orange;
+    }
+
+    &--red {
+      color: red;
+    }
+  }
+
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: $gray;
+  padding: 15px;
+}
